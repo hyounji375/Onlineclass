@@ -1,1 +1,11 @@
 # youtube_class
+
+0711 
+
+코딩악마 JS 기초 강좌
+1. 변수
+2. 자료형
+3. alert, prompt, confirm
+  : prompt(a,b) => a는 메시지창에 보이는 내용. ex) 이름을 입력해주세요.
+                   b는 입력칸에 보이는 default값. input 태그에서 placeholder과 같은 느낌. ex) JiHyeon
+  : alert는 확인 버튼밖에 없지만 comfirm은 취소, 확인 이렇게 버튼이 2개. 그래서 취소는 false를, 확인은 true를 반환한다.
