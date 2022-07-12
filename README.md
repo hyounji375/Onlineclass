@@ -42,3 +42,9 @@
     => 나머지값이 0이면 false니까 if문 실행을 안 하고 console.log(i)가 찍힘. 
        나머지값이 1이면 true니까 continue를 만나서 코드 실행을 멈추고(console.log 실행 안 함) 다시 반복문을 실행.
        그래서 짝수값만 콘솔에 찍힘.
+9. switch문
+  - case 2개가 조건은 다르지만 같은 값을 출력할 때는 아래와 같이 써줄 수 있다.
+    case 멜론 :
+    case 수박 : 
+    실행할 코드;
+    break;
