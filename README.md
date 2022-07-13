@@ -81,4 +81,15 @@
 14. 배열
   - 배열명.unshift(추가할 값); => 배열 앞에 데이터 추가
   - 배열명.shift(); => 배열 앞의 데이터 삭제
+  - for of문
+    let days = ["월", "화", "수"];
+    
+    for(i = 0; i < days.length; i++){
+      console.log(days[i]);
+    }
+    이 반복문과 아래의 반복문은 같은 값을 출력한다.
+    for(let x of days){
+      console.log(x);
+    }
+    여기서 x는 배열의 요소를 뜻하며 자유롭게 적어도 된다.
 
