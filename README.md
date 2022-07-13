@@ -64,6 +64,16 @@
   - 추가하기 : 객체이름.추가할 키 = "추가할 값";
   - 삭제하기 : delete 객체이름.삭제할 키;
   - 프로퍼티의 유무 확인 : "키" in 객체이름 => 있으면 true, 없으면 false.
+  - for in문 
+    const apple = {
+      name : "apple",
+      color : "red",
+    };
+    for(x in apple){
+      console.log(apple[x])
+    }
+    => "apple", "red"가 콘솔로그에 찍힌다.
+       여기서 x는 apple 객체의 키를 의미하며 x말고 자유롭게 적어도 된다.
 14. method, this
 15. 배열
 
