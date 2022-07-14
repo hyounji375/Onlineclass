@@ -106,3 +106,13 @@
     console.log(name);
     => 빗금이 쳐져 있는 곳에 console.log(name);을 하면 변수를 선언하기 전이므로 에러가 뜬다.
        저 빗금 부분을 TDZ라고 한다.
+       
+2. 생성자 함수
+  - 여러 객체를 만들 때 편리. 수업 시간에서 class 상속할 때 배웠던 것 같다.
+  - function Item(title, price){
+    this.title = title;
+    this.price = price;
+   };
+   
+   const Item1 = new Item("인형", 3000);
+   const Item2 = new Item("가방", 5000);
