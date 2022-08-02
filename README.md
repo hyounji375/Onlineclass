@@ -133,3 +133,34 @@
        [["name", "apple"], ["color", "red"]]
   - 키와 값의 배열을 객체로 반환 : Object.fromEntries(배열명);
     => Object.entries(객체명);의 반대
+
+--------------------------------------------------------------------------------------------------------------------------
+
+0802 
+
+코딩앙마 JS 중급 강좌
+
+4. 심볼형
+  - const a = symbol();
+    const b = symbol();
+    이렇게 했을 경우 a === b는 false, a == b도 false가 나온다. 값이 아예 다른 것. 
+    이름이 같다 해도 다른 존재다. 
+  - symbol()에서 괄호 안에 심볼에 대한 설명을 문자열로 넣어줄 수 있다. 
+  - const a = symbol(id);
+    const user = {name : "mike", age : 30, [id : "myid""]}
+    Object.keys(객체명);, Object.values, Object.entries(객체명);을 했을 때 변수 id로 넣은 키는 콘솔로그에 찍히지 않는다. 
+    숨겨진 심볼을 보려면 
+     첫째, Object.getOwnPropertySymbols(user); => 숨겨진 심볼만 보여준다.      
+     둘째, Reflect.ownkeys(user); => 객체 플러스 숨겨진 심볼까지 다 보여준다. 
+  - a.descrption; => id.  
+    descrption을 이용해서 심볼의 이름을 알 수 있다. 
+  - 심볼을 이용하면 원본 데이터를 훼손하지 않고 속성을 추가할 수 있다. 
+  - 전역 심볼 symbol.for()
+      : 하나의 심볼만 보장 받는다. 
+        심볼 하나를 생성하고 키를 통해 같은 심볼을 공유하는 개념.
+        const a = symbol.for();
+        const b = symbol.for(); 
+        => a === b는 true
+      : const a = symbol.for(id);
+        symbol.keyfor(a) => id
+        즉, keyfor을 이용해서 심볼 만들 때 붙여줬던 이름을 알 수 있다. 
