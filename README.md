@@ -173,5 +173,13 @@
 
 5. 숫자, 수학 method
   - toString() : 10진수의 숫자를 2진수 또는 16진수로 변환.
-  ![2](https://user-images.githubusercontent.com/105581499/185424333-fe7f2fe0-0f2e-4c9e-a189-65dcd7854cf0.png)
+    
+    let num1 = 10;
+
+    num1.toString(2);
+    console.log(num1.toString(2)); //1010
+
+    let num2 = 255;
+    num2.toString(16);
+    console.log(num2.toString(16)); //ff
 
