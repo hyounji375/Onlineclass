@@ -173,4 +173,5 @@
 
 5. 숫자, 수학 method
   - toString() : 10진수의 숫자를 2진수 또는 16진수로 변환.
-    ![1](https://user-images.githubusercontent.com/105581499/185424113-28833317-712c-42c1-901c-cdf621b3302c.png)
+  ![2](https://user-images.githubusercontent.com/105581499/185424333-fe7f2fe0-0f2e-4c9e-a189-65dcd7854cf0.png)
+
