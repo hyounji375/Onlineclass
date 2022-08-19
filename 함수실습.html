@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./함수실습.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>수학 메소드 실습</header>
+    <div>
+      <p>1. toString()</p>
+      <input type="text" id="toS" onkeyup="printAnswer()" />의 2진수는?
+      <div id="toString" onchange="Answer()"></div>
+    </div>
+    <script>
+      function printAnswer() {
+        const num1 = document.getElementById("toS").value;
+        console.log(typeof num1);
+        document.getElementById("toString").innerText =
+          parseFloat(num1).toString(2);
+      }
+    </script>
+  </body>
+</html>
