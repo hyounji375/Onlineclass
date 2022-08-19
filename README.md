@@ -1,7 +1,5 @@
 # youtube_class
 
-# youtube_class
-
 0711 
 
 코딩앙마 JS 기초 강좌
