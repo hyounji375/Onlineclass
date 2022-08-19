@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./함수실습.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>수학 메소드 실습</header>
+    <div>
+      <p>1. toString()</p>
+      <input type="text" id="toS" onkeyup="printAnswer()" />의 2진수는?
+      <div id="toString" class="divCss" onchange="Answer()"></div>
+    </div>
+    <div class="flex">
+      <p onclick="printPie()">2. 원주율 파이는?</p>
+      <div id="pie" class="divCss"></div>
+      입니다.
+    </div>
+    <div class="flex">
+      <p>3. 소수점과 상관없이 올리고</p>
+      <input type="text" id="up" class="divCss" onkeyup="ceil()" />
+      <p>-></p>
+      <div id="upAnswer" class="divCss"></div>
+      <p>내려요.</p>
+      <input type="text" id="down" class="divCss" onkeyup="floor()" />
+      <p>-></p>
+      <div id="downAnswer" class="divCss"></div>
+    </div>
+    <div class="flex">
+      <p>하지만 역시 국룰은 반올림이죠.</p>
+      <input type="text" id="round" class="divCss" onkeyup="round()" />
+      <p>-></p>
+      <div id="roundAnswer" class="divCss"></div>
+    </div>
+    <div class="flex">
+      <p>이번에는 소수점 셋째 자리까지만 나타낼 거예요.</p>
+      <input type="text" id="fixed" class="divCss" onkeyup="fixed()" />
+      <p>이 숫자를 이렇게 -></p>
+      <div id="fixedAnswer" class="divCss"></div>
+    </div>
+    <p>4. 이건 숫자게 아니게?</p>
+    <div class="flex">
+      <input type="text" id="nan" class="divCss" onkeyup="nan()" />
+      <p>-></p>
+      <div id="nanAnswer" class="divCss"></div>
+    </div>
+    <div>
+      <p onclick="age()">5. 내 나이는?</p>
+      <div id="ageAnswer" class="divCss"></div>
+    </div>
+    <div>
+      <p>5. 다음 숫자 중 어느 게 제일 클까요?</p>
+      <button onclick="max()">click</button>
+      <input type="text" id="max1" />
+      <input type="text" id="max2" />
+      <input type="text" id="max3" />
+      <div><p onclick="maxAnswer()">답은?</p></div>
+      <div id="maxAnswer" class="divCss"></div>
+      <div>
+        <p>
+          그러면 제일 작은 건 뭘까요?
+          <button onclick="minAnswer()">click</button>
+        </p>
+        <div id="minAnswer" class="divCss"></div>
+      </div>
+    </div>
+    <script src="./수학메소드.js" ;></script>
+  </body>
+</html>
