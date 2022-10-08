@@ -309,11 +309,8 @@ name이라는 키를 "과일이름"이라는 이름으로 사용할 수 있다.
 
 10강 나머지 매개 변수와 전개 구문
 
-![1](https://user-images.githubusercontent.com/105581499/194708374-5ab3a560-7d5e-4173-a948-36f029c7082b.png)
-![2](https://user-images.githubusercontent.com/105581499/194708378-04694016-c78f-4a72-9e1f-e224f308d4a0.png)
-![3](https://user-images.githubusercontent.com/105581499/194708381-a359636a-d4d8-4111-8815-53c5aa651234.png)
+[10강.zip](https://github.com/hyounji375/youtube_class/files/9739244/10.zip)
 
-[나머지 매개변수 및 전개구문.txt](https://github.com/hyounji375/youtube_class/files/9739243/default.txt)
 
 11강 클로저
 
