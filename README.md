@@ -318,4 +318,13 @@ name이라는 키를 "과일이름"이라는 이름으로 사용할 수 있다.
 
 [11강 클로저.txt](https://github.com/hyounji375/youtube_class/files/9739233/11.txt)
 
+--------------------------------------------------------------------------------------------------------------------------
+
+1011
+
+코딩앙마 JS 중급 강좌
+
+13강 call, apply,bind
+
+[13강(call, apply,bind).zip](https://github.com/hyounji375/youtube_class/files/9757057/13.call.apply.bind.zip)
 
