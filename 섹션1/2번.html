@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <input type="text" id="num1" />
+    <input type="text" id="num2" />
+    <input type="text" id="num3" />
+    <button onClick="Triangle()">확인</button>
+    <div id="answer"></div>
+    <script>
+      function Triangle(a, b, c) {
+        let answer = "YES";
+        const Number = [a, b, c];
+        const Max = Math.max(a, b, c);
+        const num2 = Number.filter((n) => n !== Max);
+        const Sum = num2[0] + num2[1];
+
+        if (Sum > Max) {
+          return answer;
+        } else {
+          return (answer = "NO");
+        }
+      }
+      console.log(Triangle(13, 33, 17));
+    </script>
+  </body>
+</html>
