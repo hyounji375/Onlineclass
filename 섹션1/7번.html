@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      function solution(day, arr) {
+        let answer = [];
+        let num = [];
+        for (i = 0; i < arr.length; i++) {
+          a = arr[i] % 10;
+          num.push(a);
+          if (a === day) {
+            answer.push(a);
+          }
+        }
+        return answer.length;
+      }
+
+      arr = [25, 23, 11, 47, 53, 17, 33];
+      console.log(solution(7, arr));
+
+      // function solution(day, arr) {
+      //   let answer = 0;
+      //   for (let x of arr) {
+      //     if (x % 10 === day) {
+      //       answer++;
+      //     }
+      //   }
+      //   return answer;
+      // }
+      // arr = [25, 23, 11, 47, 53, 17, 33];
+      // console.log(solution(7, arr));
+    </script>
+  </body>
+</html>
