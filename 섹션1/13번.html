@@ -9,33 +9,33 @@
       소문자는 대문자로 변환
     </div>
     <script>
-      // function solution(s) {
-      //   let answer = "";
-      //   for (x of s) {
-      //     if (x === x.toUpperCase()) {
-      //       x = x.toLowerCase();
-      //     } else {
-      //       x = x.toUpperCase();
-      //     }
-      //     answer += x;
-      //   }
-      //   return answer;
-      // }
-
-      // console.log(solution("StuDY"));
-
       function solution(s) {
         let answer = "";
-        for (let x of s) {
+        for (x of s) {
           if (x === x.toUpperCase()) {
-            answer += x.toLowerCase();
+            x = x.toLowerCase();
           } else {
-            answer += x.toUpperCase();
+            x = x.toUpperCase();
           }
+          answer += x;
         }
         return answer;
       }
+
       console.log(solution("StuDY"));
+
+      // function solution(s) {
+      //   let answer = "";
+      //   for (let x of s) {
+      //     if (x === x.toUpperCase()) {
+      //       answer += x.toLowerCase();
+      //     } else {
+      //       answer += x.toUpperCase();
+      //     }
+      //   }
+      //   return answer;
+      // }
+      // console.log(solution("StuDY"));
     </script>
   </body>
 </html>
