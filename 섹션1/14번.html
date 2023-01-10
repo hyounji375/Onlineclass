@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <div>N개의 문자열이 입력되면 그 중 가장 긴 문자열을 출력</div>
+    <script>
+      function solution(s) {
+        let answer;
+        let len = [];
+        for (i = 0; i < s.length; i++) {
+          for (j = 1; j < s.length - 1; j++) {
+            if (s[i].length < s[j].length) {
+              answer = s[j];
+            } else {
+              answer = s[i];
+            }
+          }
+        }
+        return answer;
+      }
+
+      let str = ["teacher", "time", "student", "beautiful", "good"];
+      console.log(solution(str));
+
+      // function solution(s) {
+      //   let answer,
+      //     max = Number.MIN_SAFE_INTEGER;
+      //   for (let x of s) {
+      //     if (x.length > max) {
+      //       max = x.length;
+      //       answer = x;
+      //     }
+      //   }
+      //   return answer;
+      // }
+      // let str = ["teacher", "time", "student", "beautiful", "good"];
+      // console.log(solution(str));
+    </script>
+  </body>
+</html>
