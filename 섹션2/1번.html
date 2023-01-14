@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <div>
+      N(1<=N<=100)개의 정수를 입력받아, 자신의 바로 앞 수보다 큰 수만 출력
+      <br />
+      첫 번째 수는 무조건 출력한다
+    </div>
+    <script>
+      function solution(arr) {
+        let answer = [arr[0]];
+        let len = arr.length;
+        for (x of arr) {
+          if (x > len - 1) {
+            if (x !== arr[0]) {
+              answer.push(x);
+            }
+          }
+        }
+        return answer;
+      }
+      // 문제를 잘못 이해함. 자신을 N이라고 이해하고 풀었다.
+      // N이 아니라 각각의 요소. 즉, 3이 7보다 크면 출력, 9가 3보다 크면 출력 이런 식.
+
+      let arr = [7, 3, 9, 5, 6, 12];
+      console.log(solution(arr));
+
+      //   function solution(arr) {
+      //     let answer = [];
+      //     answer.push(arr[0]);
+      //     for (let i = 1; i < arr.length; i++) {
+      //       if (arr[i] > arr[i - 1]) {
+      //         answer.push(arr[i]);
+      //       }
+      //     }
+      //     return answer;
+      //   }
+      //   let arr = [7, 3, 9, 5, 6, 12];
+      //   console.log(solution(arr));
+    </script>
+  </body>
+</html>
