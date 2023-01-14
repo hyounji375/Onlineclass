@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <div>소문자로 된 한개의 문자열이 입력되면 중복된 문자를 제거하고 출력</div>
+    <script>
+      function solution(s) {
+        let str = new Set(s);
+        let answer = "";
+        for (x of str) {
+          answer += x;
+        }
+        return answer;
+      }
+      console.log(solution("ksekkset"));
+
+      // function solution(s) {
+      //   let answer = "";
+      //   for (let i = 0; i < s.length; i++) {
+      //     if (s.indexOf(s[i]) === i) {
+      //       answer += s[i];
+      //     }
+      //   }
+      // }
+      // console.log(solution("ksekkset"));
+      //인덱스와 indexOf의 값이 다른 것들은 중복되는 것.
+      //따라서 인덱스와 indexOf 값이 같은 것만 answer에 누적
+
+      //indexOf("k") => 첫 번째로 발견되는 k의 인덱스 반환. 따라서 0이 나옴.
+      //indexOf("k", 1) => 1번 인덱스 이후의 k 인덱스 반환. 따라서 3이 나옴.
+      //일치하는 인덱스가 없으면 -1 반환
+
+      // function solution(s) {
+      //   let answer = 0;
+      //   let pos = s.indexOf("k");
+      //   while (pos !== -1) {
+      //     answer++;
+      //     pos = s.indexOf("k", pos + 1);
+      //   }
+      //   return answer;
+      // }
+      // console.log(solution("ksekkset"));
+      //indexOf 사용해서 중복 문자 개수 세기
+    </script>
+  </body>
+</html>
