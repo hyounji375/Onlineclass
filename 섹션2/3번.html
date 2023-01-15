@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <div>
+      1:가위, 2:바위, 3:보
+      <br />
+      두 사람의 각 회의 가위, 바위, 보 정보가 주어지면 각 회를 누가 이겼는지
+      출력
+    </div>
+    <div>
+      풀이 : 비기는 경우(a===b), A가 이기는 경우(a=1&&b=3, a=2&&b=1, a=3&&b=2),
+      나머지는 B가 이기는 경우
+    </div>
+    <script>
+      function solution(a, b) {
+        let answer = [];
+        const scissors = 1;
+        const rock = 2;
+        const paper = 3;
+        for (i = 0; i < a.length; i++) {
+          if (a[i] === scissors) {
+            if (b[i] === scissors) answer.push("D");
+            if (b[i] === rock) answer.push("B");
+            if (b[i] === paper) answer.push("A");
+          }
+          if (a[i] === rock) {
+            if (b[i] === scissors) answer.push("A");
+            if (b[i] === rock) answer.push("D");
+            if (b[i] === paper) answer.push("B");
+          }
+          if (a[i] === paper) {
+            if (b[i] === scissors) answer.push("B");
+            if (b[i] === rock) answer.push("A");
+            if (b[i] === paper) answer.push("D");
+          }
+        }
+        return answer;
+      }
+
+      let a = [1, 3, 2, 1, 3];
+      let b = [1, 1, 2, 2, 3];
+      console.log(solution(a, b));
+
+      // function solution(a, b) {
+      //   let answer = "";
+      //   for (let i = 0; i < a.length; i++) {
+      //     if (a[i] === b[i]) answer += "D" + " ";
+      //     else if (a[i] === 1 && b[i] === 3) answer += "A" + " ";
+      //     else if (a[i] === 2 && b[i] === 1) answer += "A" + " ";
+      //     else if (a[i] === 3 && b[i] === 2) answer += "A" + " ";
+      //     else answer += "B" + " ";
+      //   }
+      //   return answer;
+      // }
+      // let a = [2, 3, 3, 1, 3];
+      // let b = [1, 1, 2, 2, 3];
+      // console.log(solution(a, b));
+    </script>
+  </body>
+</html>
